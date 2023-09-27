@@ -66,37 +66,237 @@
 }
 
 .intro-shape{
-    /* position: absolute;
-    top: 10%;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  */
+    transform: translate(-50%, -50%); 
+
 }
 
-.intro-title{
+/* .intro-title{
     position: absolute;
     top: 7%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    width: 80vw;
-}
+    width: 80%;
+} */
 
-.sb-white{
+/* .sb-white{
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%); 
     width: 80%;
     height: auto;
+} */
+
+/* .intro-detail{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.intro-title {
+    width: 100%; /* 幅を100%に設定 */
+    max-width: 900px; /* 最大幅を指定（必要に応じて調整） */
+    margin: 0 auto; /* 中央寄せ */
+    padding: 20px; /* 必要に応じて内部余白を設定 */
 }
 
-.intro-top{
+.sb-white {
+    width: 100%; /* 幅を100%に設定 */
+    max-width: 900px; /* 最大幅を指定（必要に応じて調整） */
+    margin: 0 auto; /* 中央寄せ */
+    padding: 20px; /* 必要に応じて内部余白を設定 */
+}
+
+
+.name p span:nth-child(even) {
+    font-size: 40px; /* 偶数番目の<span>要素は大きなフォントサイズ */
+}
+
+.name p span:nth-child(odd) {
+    font-size: 32px; /* 奇数番目の<span>要素は小さなフォントサイズ */
+}
+
+.intro-detail-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro-detail-1 p{
+    width: 100%;
+    padding: 10px;
+    font-size: 34px;
+    font-family: Corporate-Logo-Rounded-Bold-ver3;
+    color: #333333;
+}
+
+.horizontal-line {
+    width: 66%; /* 線の幅を100%に設定（親要素の幅いっぱいに広がる） */
+    height: 4px; /* 線の高さを1ピクセルに設定 */
+    background-color: #333; /* 線の色を指定 */
+    margin: 0 auto; /* 水平方向に中央寄せにする */
+    margin-bottom: 20px; /* 必要に応じて下部の余白を調整 */
+    border-radius: 3px;
+}
+
+.intro-concept p{
+    color: #ffffff;
+    text-shadow: #333333;
+    background-color: #00B4D8;
+    border: 3px solid #333333;
+    width: 70%;    
+    margin: 0 auto; 
+    text-align: center;
+    padding: 10px; 
+    font-size: 34px; 
+}
+
+
+/* 使用技術 */
+
+.skills{
+    position: relative;
+    background-image: url(img/skills_bg.png);
+}
+
+.skill-list{
+    display: flex;
+}
+
+.skills img{
+    width: 10%;
+}
+
+
+/* 開発者インタビュー */
+
+.interview{
+    background-color: rgba(255, 210, 55, 90);
+}
+
+.interview-heading{
+    display: flex;
+    background-color: #F73A3E;
+    width: 90%;
+}
+
+.interview-heading img{
+    width: 15%;
+}
+
+.interview-text{
+    padding-left: 10%;
+}
+
+.interview-text h1{
+    font-size: 60px;
+    font-family: LightNovelPOPv2;
+    color: #333333;
+}
+
+.interview-text .horizontal-line{
+    width: 100%;
+}
+
+.boys{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 100px 50px;
+}
+
+.boys-text{
+    position: relative;
+    display: inline-block;
+}
+
+.boys p{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    font-size: 16px;
+    font-family: Corporate-Logo-Rounded-Bold-ver3;
+}
+
+.boys-text img{
     width: 60%;
 }
 
-.intro-top{
+.girls{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0px 50px;
+}
+
+.girls-text{
+    position: relative;
+    display: inline-block;  
+}
+
+.girls-text p{
     position: absolute;
-    top: 15%;
-    left: 50%;
+    top: 35%;
+    left: 28%;
     transform: translate(-50%, -50%);
-    width: 60vw;
+    width: 45%;
+    font-size: 16px;
+    font-family: Corporate-Logo-Rounded-Bold-ver3;
+}
+
+.girls-text img{
+    width: 60%;
+}
+
+footer{
+    background-color: rgba(120, 53, 255, 80);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.product-link{
+    display: flex;
+    align-items: center;
+}
+
+.hacku-link{
+    display: flex;
+    align-items: center;
+}
+
+.links img{
+    width: 45px;
+    height: auto;
+}
+
+.links p{
+    margin-right: 20px;
+}
+
+.line{
+    border: 1px solid #ffffff;
+    width: 70%;
+    margin: 10px 0;
+}
+
+footer p{
+    color: #ffffff;
+    font-family: Corporate-Logo-Rounded-Bold-ver3;
+    font-size: 15px;
 }
