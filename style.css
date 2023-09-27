@@ -3,3 +3,100 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.firstview{
+    background-image: url(img/bg_firstview.png);
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    height: 100vh;
+    position: relative;
+
+}
+
+.container{
+    padding: 50px 0;
+    height: 100vh;
+}
+.hedobon{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: auto;
+    z-index: 2;
+}
+
+.sb-yellow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: auto;
+    z-index: 1;
+}
+
+.award-sb{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 20%;
+    z-index: 3;
+}
+
+.hedobon-red{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    width: 30%;
+    z-index: 4;
+}
+
+
+/* へどぼんってどんなアプリ？？ */
+
+.introduction{
+    position: relative;
+    background-color: rgba(255, 210, 55, 90);
+    width: auto;
+    height: 1968px;
+}
+
+.intro-shape{
+    /* position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);  */
+}
+
+.intro-title{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 80vw;
+}
+
+.sb-white{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 80%;
+    height: auto;
+}
+
+.intro-top{
+    width: 60%;
+}
+
+.intro-top{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+}
