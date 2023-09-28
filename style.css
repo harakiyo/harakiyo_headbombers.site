@@ -24,7 +24,7 @@
     top: 50%;
     left: 45%;
     transform: translate(-50%, -50%);
-    width: 60vw;
+    width: 60%;
     height: auto;
     z-index: 2;
 }
@@ -44,6 +44,7 @@
     top: 5%;
     left: 5%;
     width: 20%;
+    margin: 0 auto;
     z-index: 3;
 }
 
@@ -52,6 +53,7 @@
     top: 50%;
     left: 65%;
     width: 30%;
+    margin: 0 auto;
     z-index: 4;
 }
 
@@ -159,24 +161,115 @@
 
 /* 使用技術 */
 
-.skills{
+.skills {
     position: relative;
-    background-image: url(img/skills_bg.png);
+    background-color: rgba(60, 225, 255, 90);
+    width: 100%;
 }
 
-.skill-list{
+.skill-heading {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.skill-text {
+    position: absolute;
+    top: 145px; /* 任意の位置に調整 */
+    left: 5%; /* 任意の位置に調整 */
+    color: #fff;
+    font-size: 70px;
+    font-family: LightNovelPOPv2;
+    transform: rotate(-17deg);
+    z-index: 2;
+    width: 30%;
+}
+
+.skill-img {
+    position: absolute;
+    top: 50px; 
+    left: 5%;
+    z-index: 1;
+    width: 30%;
+}
+
+.skill-list {
+    position: absolute;
+    top: 48%;
     display: flex;
+    justify-content: center;
+    gap: 4%;
 }
 
-.skills img{
-    width: 10%;
+.skill-list img{
+    width: 15%;
 }
 
+/* .skills img {
+    width: 15%;
+} */
+
+.skills .hedobon-skill{
+    width: 100%;
+    height: 100%;
+}
+
+.connection{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    display: flex;
+    margin: 0 auto;
+    gap: 6%;
+}
+
+.connection img{
+    width: 20%;
+}
+
+
+/* 寝癖診断 */
+
+.diagnosis{
+    background-color: #7835FF;
+}
+
+.diagnosis-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2%;
+    padding: 50px;
+}
+
+.diagnosis-title h2{
+    font-size: 70px;
+    color: #FFD74B;
+    font-family: LightNovelPOPv2;
+}
+
+.diagnosis-title img{
+    width: 7%;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.card img{
+    width: 20%;
+}
 
 /* 開発者インタビュー */
 
 .interview{
+    position: relative;
     background-color: rgba(255, 210, 55, 90);
+    padding-top: 100px;
 }
 
 .interview-heading{
@@ -187,10 +280,13 @@
 
 .interview-heading img{
     width: 15%;
+    height: 15%;
 }
 
 .interview-text{
-    padding-left: 10%;
+    padding: 3% 0px 0px 10%;
+    text-align: center;
+    
 }
 
 .interview-text h1{
@@ -203,6 +299,7 @@
     width: 100%;
 }
 
+
 .boys{
     display: flex;
     justify-content: center;
@@ -213,6 +310,7 @@
 .boys-text{
     position: relative;
     display: inline-block;
+    width: auto;
 }
 
 .boys p{
