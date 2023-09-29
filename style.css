@@ -19,6 +19,7 @@
     padding: 50px 0;
     height: 100vh;
 }
+
 .hedobon{
     position: absolute;
     top: 50%;
@@ -68,49 +69,24 @@
 }
 
 .intro-shape{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-
-}
-
-/* .intro-title{
-    position: absolute;
-    top: 7%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 80%;
-} */
-
-/* .sb-white{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
     height: auto;
-} */
+}
 
-/* .intro-detail{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
 
 .intro-title {
-    width: 100%; /* 幅を100%に設定 */
-    max-width: 900px; /* 最大幅を指定（必要に応じて調整） */
-    margin: 0 auto; /* 中央寄せ */
-    padding: 20px; /* 必要に応じて内部余白を設定 */
+    width: 100%; 
+    max-width: 900px; 
+    margin: 0 auto; 
 }
 
 .sb-white {
-    width: 100%; /* 幅を100%に設定 */
-    max-width: 900px; /* 最大幅を指定（必要に応じて調整） */
-    margin: 0 auto; /* 中央寄せ */
-    padding: 20px; /* 必要に応じて内部余白を設定 */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; 
 }
 
 
@@ -126,7 +102,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 .intro-detail-1 p{
@@ -136,6 +112,9 @@
     font-family: Corporate-Logo-Rounded-Bold-ver3;
     color: #333333;
 }
+
+
+
 
 .horizontal-line {
     width: 66%; /* 線の幅を100%に設定（親要素の幅いっぱいに広がる） */
@@ -175,34 +154,37 @@
 
 .skill-text {
     position: absolute;
-    top: 145px; /* 任意の位置に調整 */
-    left: 5%; /* 任意の位置に調整 */
+    top: 145px; 
+    left: 5%; 
     color: #fff;
     font-size: 70px;
     font-family: LightNovelPOPv2;
     transform: rotate(-17deg);
     z-index: 2;
     width: 30%;
+    background-image: url(img/sb_skill.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 50px 70px 110px 80px;
 }
-
+/* 
 .skill-img {
     position: absolute;
     top: 50px; 
     left: 5%;
     z-index: 1;
     width: 30%;
-}
+} */
 
 .skill-list {
     position: absolute;
     top: 48%;
     display: flex;
     justify-content: center;
-    gap: 4%;
 }
 
 .skill-list img{
-    width: 15%;
+    width: 11%;
 }
 
 /* .skills img {
@@ -214,24 +196,152 @@
     height: 100%;
 }
 
+.hedobon-skill{
+    vertical-align: bottom;
+}
+
+.skills img{
+    width: 12%;
+    height: 12%;
+}
+
 .connection{
-    position: absolute;
-    top: 50%;
-    left: 30%;
+    position: relative;
     display: flex;
-    margin: 0 auto;
-    gap: 6%;
+    flex-direction: column;
+    width: 10%;
+    height: 10%;
 }
 
 .connection img{
-    width: 20%;
+    width: 100%;
 }
+
+
+/* 使い方*/
+.howtouse{
+    position: relative;
+    background-color: rgba(247, 58, 62, 90);
+    height: 1932px;
+}
+
+.howtouse h2{
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    transform: translate(-8%, -10%);
+    background-image: url(img/sb_howto.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+    font-size: 60px;
+    padding: 75px 130px 150px 130px;
+    z-index: 3;
+}
+
+.step01{
+    position: absolute;
+    top: 13%;
+    left: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: LightNovelPOPv2;
+}
+.step1-card{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: auto;
+    z-index: 2;
+}
+
+.step{
+    font-size: 35px;
+    color: #fff;
+}
+
+.number{
+    font-size: 128px;
+    color: #FFD239;
+}
+
+.step1-detail{
+    position: relative;
+    font-family: Corporate-Logo-Rounded-Bold-ver3;
+    font-size: 26px;
+    color: #333333;
+}
+
+.point{
+    position: absolute;
+    top: 500px;
+    left: 60%;
+    z-index: 4;
+}
+
+.order{
+    position: absolute;
+}
+
+.announce{
+    position: absolute;
+}
+
+.step02{
+    position: absolute;
+    top:57.5%;
+    left: 21%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: LightNovelPOPv2;
+}
+
+.step1-box{
+    position: absolute;
+    top: 35.5%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 70%;
+    z-index: 1;
+}
+
+
+.step2-box{
+    position: absolute;
+    top: 80%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 70%;
+    z-index: 1;
+}
+
+.step2-card{
+    position: absolute;
+    top: 79.5%;
+    left: 66.5%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: auto;
+    z-index: 2;
+}
+
 
 
 /* 寝癖診断 */
 
 .diagnosis{
-    background-color: #7835FF;
+    background-color: rgba(120, 53, 255, 80);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .diagnosis-title{
@@ -264,18 +374,20 @@
     width: 20%;
 }
 
+
 /* 開発者インタビュー */
 
 .interview{
     position: relative;
     background-color: rgba(255, 210, 55, 90);
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .interview-heading{
     display: flex;
     background-color: #F73A3E;
     width: 90%;
+    margin: 0px 0px 70px 0px;
 }
 
 .interview-heading img{
@@ -299,59 +411,74 @@
     width: 100%;
 }
 
-
-.boys{
+.person {
     display: flex;
     justify-content: center;
-    position: relative;
-    padding: 100px 50px;
+    align-items: center;
 }
 
-.boys-text{
-    position: relative;
-    display: inline-block;
-    width: auto;
+.person img {
+    width: 35%;
 }
 
-.boys p{
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    width: 45%;
+.person .comment {
     font-size: 16px;
+    max-width: 660px;
+    height: 360px;
+    background-size: contain;
+    background-repeat: no-repeat;
     font-family: Corporate-Logo-Rounded-Bold-ver3;
+    color: #333333;
 }
 
-.boys-text img{
-    width: 60%;
+.person .comment.boys{
+    padding: 40px 90px 0px 160px;
 }
 
-.girls{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    padding: 0px 50px;
+.person .comment.girls{
+    padding: 70px 123px 0px 60px;
 }
 
-.girls-text{
-    position: relative;
-    display: inline-block;  
+
+.comment{
+    margin-top: 5%;
 }
 
-.girls-text p{
-    position: absolute;
-    top: 35%;
-    left: 28%;
-    transform: translate(-50%, -50%);
-    width: 45%;
-    font-size: 16px;
-    font-family: Corporate-Logo-Rounded-Bold-ver3;
+.person.kinomu- .comment {
+    background-image: url(img/kinomu-sb.png); 
 }
 
-.girls-text img{
-    width: 60%;
+.person.ayapo .comment {
+    background-image: url(img/ayapo-sb.png); 
 }
+
+.person.himura .comment {
+    background-image: url(img/himura-sb.png); 
+}
+
+.person.harakiyo .comment {
+    background-image: url(img/harakiyo-sb.png); 
+}
+
+.person.runmaru .comment {
+    background-image: url(img/runmaru-sb.png); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     background-color: rgba(120, 53, 255, 80);
