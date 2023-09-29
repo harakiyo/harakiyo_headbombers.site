@@ -62,33 +62,39 @@
 /* へどぼんってどんなアプリ？？ */
 
 .introduction{
-    position: relative;
+    /* position: relative; */
     background-color: rgba(255, 210, 55, 90);
     width: auto;
     height: 1968px;
+
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
 }
 
-.intro-shape{
+.intro{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 80%;
-    height: auto;
 }
 
+.introduction p{
+    width: 100%;
+    padding: 10px;
+    font-size: 34px;
+    font-family: Corporate-Logo-Rounded-Bold-ver3;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .intro-title {
     width: 100%; 
     max-width: 900px; 
     margin: 0 auto; 
 }
-
-.sb-white {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto; 
-}
-
 
 .name p span:nth-child(even) {
     font-size: 40px; /* 偶数番目の<span>要素は大きなフォントサイズ */
@@ -103,25 +109,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(img/sb_white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 120px
 }
-
-.intro-detail-1 p{
-    width: 100%;
-    padding: 10px;
-    font-size: 34px;
-    font-family: Corporate-Logo-Rounded-Bold-ver3;
-    color: #333333;
-}
-
-
 
 
 .horizontal-line {
-    width: 66%; /* 線の幅を100%に設定（親要素の幅いっぱいに広がる） */
-    height: 4px; /* 線の高さを1ピクセルに設定 */
-    background-color: #333; /* 線の色を指定 */
-    margin: 0 auto; /* 水平方向に中央寄せにする */
-    margin-bottom: 20px; /* 必要に応じて下部の余白を調整 */
+    width: 85%; 
+    height: 4px; 
+    background-color: #333;
+    margin: 0 auto; 
+    margin-bottom: 20px; 
     border-radius: 3px;
 }
 
@@ -130,13 +130,45 @@
     text-shadow: #333333;
     background-color: #00B4D8;
     border: 3px solid #333333;
-    width: 70%;    
+    width: 100%;    
     margin: 0 auto; 
     text-align: center;
     padding: 10px; 
     font-size: 34px; 
 }
 
+.intro-detail-2{
+    position: relative;
+}
+
+.intro-detail-2 h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.7;
+    color: #333333;
+    font-size: 30px;
+    font-family: LightNovelPOPv2;
+}
+
+.intro-detail-2 .big-text{
+    font-size: 50px;
+    color: #FFD239;
+}
+
+.sb-blue{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    background-image: url(img/sb_blue_right.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: 50% 0;
+    width: 100%;
+    padding: 100px;
+}
 
 /* 使用技術 */
 
@@ -442,6 +474,8 @@
     font-size: 70px;
     color: #FFD74B;
     font-family: LightNovelPOPv2;
+    text-shadow: 4px 4px 0 #333333,4px -4px 0 #333333,-4px 4px 0 #333333,-4px -4px 0 #333333;
+
 }
 
 .diagnosis-title img{
@@ -549,9 +583,76 @@
     background-image: url(img/runmaru-sb.png); 
 }
 
+/* 1025px以下の画面幅に対するスタイル */
+@media (max-width: 1025px) {
+    .person.kinomu-,
+    .person.himura,
+    .person.runmaru {
+        flex-direction: column; /* コラムレイアウトに変更 */
+        align-items: center; /* テキストを中央に配置 */
+    }
 
+    .person.ayapo,
+    .person.harakiyo{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
+    .person img {
+        width: 80%; /* 画像を幅いっぱいに広げる */
+    }
 
+    .person .comment {
+        max-width: 80%; /* テキストの最大幅を100%に設定 */
+        padding: 20px 30px 20px 10px; /* パディングを調整 */
+    }
+    
+    .kinomu- img {
+        content: url('img/kinomu-_sp.png'); /* 新しい画像1のURLを指定 */
+    }
+
+    .ayapo img {
+        content: url('img/ayapo_sp.png'); /* 新しい画像2のURLを指定 */
+    }
+
+    .himura img{
+        content: url('img/himura_sp.png');
+    }
+    .harakiyo img {
+        content: url('img/harakiyo_sp.png'); /* 新しい画像3のURLを指定 */
+    }
+
+    .runmaru img {
+        content: url('img/runmaru_sp.png'); /* 新しい画像4のURLを指定 */
+    }
+
+    .person.kinomu- .comment,
+    .person.himura .comment,
+    .person.runmaru .comment {
+        background-image: url(img/boys-sb-sp.png); 
+    }
+    
+    .person.ayapo .comment,
+    .person.harakiyo .comment {
+        background-image: url(img/girls-sb-sp.png); 
+    }
+
+    .person .comment.boys,
+    .person .comment.girls{
+        padding:10% 30% 10% 10%;
+    }
+}
+
+@media (max-width: 805px) {
+    .person .comment{
+        max-width: 95%;
+    }
+
+    /* .person .comment.boys{
+        padding:100px 240px 70px 55px
+    } */
+
+}
 
 
 
