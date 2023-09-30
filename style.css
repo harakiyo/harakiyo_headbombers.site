@@ -4,19 +4,6 @@
     box-sizing: border-box;
 }
 
-.stroke {
-    padding: 10px;
-    color: #ffd74b;
-    font-weight: bold;
-    font-size: 70px;
-    -webkit-text-stroke: 10px #333;
-    position: relative;
-    margin: 0;
-  }
-  .no-stroke {
-    -webkit-text-stroke: 0;
-    position: absolute;
-  }
 
 .firstview{
     background-image: url(img/bg_firstview.png);
@@ -57,6 +44,7 @@
 
 .hedobon img{
     animation: bounce 2.5s .5s;
+    width: 100%;
 }
 
 .sb-yellow{
@@ -268,7 +256,7 @@
 
 .intro-title {
     display: block;
-    width: 100%; 
+    width: 80%; 
     max-width: 768px;
     margin: 0 auto; 
 }
@@ -284,6 +272,9 @@
 .intro-detail-1{
     position: relative;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .hedobon-description{
@@ -346,23 +337,7 @@
     width: fit-content;
 }
 
-.sb-blue{
-    display: inline-block;
-    position: absolute;
-    width: 70%;
-    z-index: 2;
-    /* width: fit-content; */
-}
 
-.sb-blue.right{
-    top: -25%;
-    left: 50%;
-}
-
-.sb-blue.left{
-    top: -25%;
-    left: 10%;
-}
 
 .big-text{
     font-size: 50px;
@@ -378,19 +353,26 @@
     background-size: contain;
     background-repeat: no-repeat; 
     background-position: 50% 0;
-    padding: 10%;  
-    line-height: 1.2;   
+    padding: 50px;  
+    line-height: 1.2;  
+    display: inline-block;
+    position: absolute;
+    width: 70%;
+    z-index: 2; 
+    max-width: 330px;
 }
 
 .sb-blue-text.right{
     background-image: url(img/sb_blue_right.png);
-
+    top: -15%;
+    left: 60%;
 
 }
 
 .sb-blue-text.left{
     background-image: url(img/sb_blue_left.png);
-
+    top: -20%;
+    left: 20%;
 }
 .sb-white{
     display: flex;
@@ -408,8 +390,51 @@
     padding-left: 15%;
 }
 
+@media (max-width: 1024px) {
+    .sb-blue-text.right{
+        top: -20%;
+        left: 60%;
+    }
+
+    .sb-blue-text.left{
+        top: -25%;
+        left: 14%;
+    }
+}
+
+@media (max-width: 915px) {
+        
+    .intro-detail-1 {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .intro-detail-1 p{
+        font-size: 24px;
+    }
 
 
+}
+
+@media (max-width: 768px) {
+        
+    .intro-detail-1 {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .intro-detail-1 p{
+        font-size: 24px;
+    }
+
+
+}
 
 
 
@@ -450,6 +475,8 @@
 
 .detail.step1{
     background-image: url(img/step1_box.png);
+    position: relative;
+    max-width: 900px;
 }
 
 .detail.step2{
@@ -465,29 +492,50 @@
 }
 
 .description.step1{
-    margin-top: 10%;
+    position: relative;
+    top: 0px;
+    left: 185px;
+    max-width: 500px;
+    max-height: 600px;
 }
 
 .howtouse .card{
-    /* position: absolute; */
+    position: absolute;
     max-width: 450px;
     width: 100%;
     /* margin-bottom: 5%; */
 }
 
 .howtouse .card.step1{
-    top: 9%;
-    left: 20%;
     width: auto;
     height: 100%;
     max-height: 580px;
+    width: 40%;
+    object-fit: contain;
+    top: 39px;
+    left: 9%;
+}
+
+.point.step1{
+    position: absolute;
+    top: 13%;
 }
 
 .steps.step1{
-    /* background-image: url(img/step1_sb_1.png);
+    position: absolute;
+    top: 41%;
+    left: 18%;
+}
+
+.steps-sb{
+    background-image: url(img/step1_sb_1.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center; */
+    background-position: center;
+    position: absolute;
+    top: 35%;
+    left: 11%;
+    width: 75%;
 }
 
 .howtouse p{
@@ -501,6 +549,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     padding: 15px 60px 45px 45px;
+}
+
+.detail.step1 .advice img{
+    width: 60%;
 }
 
 .advice.step1{
@@ -751,26 +803,23 @@
     padding: 50px;
 }
 
-.diagnosis-title h2{
-    font-size: 70px;
-    color: #FFD74B;
-    font-family: LightNovelPOPv2;
-    text-shadow: 4px 4px 0 #333333,4px -4px 0 #333333,-4px 4px 0 #333333,-4px -4px 0 #333333;
-
-}
-
-.stroke.title {
+.neguse-stroke {
+    width: 100%;
     padding: 10px;
+    color: #ffd74b;
     font-weight: bold;
     font-size: 70px;
-    -webkit-text-stroke: 10px #ffffff;
+    font-family: LightNovelPOPv2;
+    -webkit-text-stroke: 10px #333;
     position: relative;
     margin: 0;
+    text-shadow: 4px 4px 0 #333333,4px -4px 0 #333333,-4px 4px 0 #333333,-4px -4px 0 #333333;
   }
-  .no-stroke.title {
+
+.neguse-no-stroke {
     -webkit-text-stroke: 0;
     position: absolute;
-  }
+}
   
 
 .diagnosis-title img{
@@ -788,6 +837,11 @@
     width: 20%;
 }
 
+@media (max-width: 1024px){
+    .neguse-stroke{
+        font-size: 60px;
+    }
+}
 
 
 
@@ -885,6 +939,23 @@
     background-color: #F73A3E;
     width: 90%;
     margin: 0px 0px 70px 0px;
+}
+
+.interview-stroke {
+    width: 100%;
+    color: #ffd74b;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: LightNovelPOPv2;
+    -webkit-text-stroke: 10px #fff;
+    position: relative;
+    margin: 0;
+    text-shadow: 1px 1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,-1px -1px 0 #fff;
+  }
+
+.interview-no-stroke {
+    -webkit-text-stroke: 0;
+    position: absolute;
 }
 
 .interview-heading img{
@@ -1045,9 +1116,39 @@
     .person.runmaru{
         margin-bottom: 40%;
     }
+
+    .interview-heading{
+        max-height: 620px;
+    }
+    
+    .stroke-title{
+        padding: 3% 0px 0px 10%;
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+        font-family: LightNovelPOPv2;
+        color: #333333;
+    }
+    
+    .stroke-text .horizontal-line{
+        width: 100%;
+        height: 6px; 
+        background-color: #fff;
+    }
 }
 
 @media (max-width: 805px) {
+
+    .interview-heading img{
+        display: none;
+    }
+
+    .interview-stroke {
+        font-size: 60px;
+        -webkit-text-stroke: 10px #fff;
+        text-shadow: 1px 1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,-1px -1px 0 #fff;
+      }
+
     .person .comment{
         max-width: 95%;
     }
@@ -1076,8 +1177,17 @@
 
 }
 
-
-
+@media (max-width: 732px) {
+    .stroke-title{
+        font-size: 30px;
+    }
+    
+    .stroke-text .horizontal-line{
+        width: 100%;
+        height: 6px; 
+        background-color: #fff;
+    }
+}
 
 
 
