@@ -66,6 +66,20 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* へどぼんってどんなアプリ？？ */
 
 .introduction{
@@ -184,8 +198,8 @@
 }
 
 .sb-blue.left{
-    top: -35%;
-    left: -10%;
+    top: -25%;
+    left: 10%;
 }
 
 .big-text{
@@ -233,8 +247,109 @@
 }
 
 
-/* 使い方*/
+
+
+
+
+
+
+
+
+
+/* 使い方（頑張るぞ〜〜） */
+
 .howtouse{
+    position: relative;
+    background-color: rgba(247, 58, 92, 90);
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+
+.intro{
+
+}
+
+.detail{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.detail.step1{
+    background-image: url(img/step1_box.png);
+}
+
+.detail.step2{
+    background-image: url(img/step2_box.png);
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 8%; */
+}
+
+.description.step1{
+    margin-top: 10%;
+}
+
+.howtouse .card{
+    /* position: absolute; */
+    max-width: 450px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.howtouse .card.step1{
+    top: 3%;
+    left: 20%;
+}
+
+.steps.step1{
+    /* background-image: url(img/step1_sb_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.howtouse p{
+    font-size: 34px;
+    font-family: Corporate-Logo-Rounded-Bold-ver3;
+    color: #333333;
+}
+
+.advice{
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 15px 60px 45px 45px;
+}
+
+.steps.step1{
+    background-image: url(img/step1_sb_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0px 10px 50px 10px;
+    margin-left: 5%;
+}
+
+.advice.step1{
+    /* background-image: url(img/step1_sb_2.png); */
+}
+
+
+
+
+
+
+/* 使い方*/
+/* .howtouse{
     position: relative;
     background-color: rgba(247, 58, 62, 90);
     height: 1932px;
@@ -273,29 +388,16 @@
     z-index: 2;
 }
 
-.step{
+.stroke.step{
     font-size: 35px;
     color: #fff;
 }
 
-.number{
+.stroke.number{
     font-size: 128px;
     color: #FFD239;
+    -webkit-text-stroke: 15px #333;
 }
-
-/* .step1-detail{
-    position: relative;
-    font-family: Corporate-Logo-Rounded-Bold-ver3;
-    font-size: 26px;
-    color: #333333;
-}
-
-.point{
-    position: absolute;
-    top: 500px;
-    left: 60%;
-    z-index: 4;
-} */
 
 .step1-detail,
 .step2-detail {
@@ -303,18 +405,16 @@
     font-family: Corporate-Logo-Rounded-Bold-ver3;
     font-size: 30px;
     color: #333333;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 1200px;
+    height: 100%;
 }
 
 .step1-detail img,
 .step2-detail img{
     position: absolute;
     z-index: 7;
-}
-
-.step1-detail img{
-    top: 810px;
-    left: 68%;
-    width: 15%;
 }
 
 .step2-detail img{
@@ -327,9 +427,10 @@
 
 .point {
     position: absolute;
-    top: 480px;
+    top: 23%;
     left: 53%;
     z-index: 4;
+    max-width: 500px;
 }
 
 .larger-text {
@@ -371,15 +472,15 @@
 }
 
 .step1-box{
+    
     position: absolute;
-    top: 35.5%;
-    left: 51%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     z-index: 1;
 }
-
 
 .step2-box{
     position: absolute;
@@ -389,6 +490,7 @@
     margin: 0 auto;
     width: 70%;
     z-index: 1;
+
 }
 
 .step2-card{
@@ -430,7 +532,39 @@
     left: 380px;
     z-index: 8;
     font-size: 50px;
-}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 寝癖診断 */
@@ -495,41 +629,19 @@
 
 /* 使用技術 */
 
-.skills {
+.skills{
     position: relative;
     background-color: rgba(60, 225, 255, 90);
     width: 100%;
 }
 
-.skill-heading {
-    position: relative;
-    text-align: center;
-    color: #fff;
-}
-
-.skill-text {
+.skill-heading{
     position: absolute;
-    top: 145px; 
-    left: 5%; 
-    color: #fff;
-    font-size: 70px;
-    font-family: LightNovelPOPv2;
-    transform: rotate(-17deg);
-    z-index: 2;
-    width: 30%;
-    background-image: url(img/sb_skill.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 50px 70px 110px 80px;
+    top: 50%;
+    left: 50%;＾
+    width: 100%;
+    z-index: 7 ;
 }
-/* 
-.skill-img {
-    position: absolute;
-    top: 50px; 
-    left: 5%;
-    z-index: 1;
-    width: 30%;
-} */
 
 .skill-list {
     position: absolute;
@@ -537,14 +649,6 @@
     display: flex;
     justify-content: center;
 }
-
-.skill-list img{
-    width: 11%;
-}
-
-/* .skills img {
-    width: 15%;
-} */
 
 .skills .hedobon-skill{
     width: 100%;
@@ -571,6 +675,10 @@
 .connection img{
     width: 100%;
 }
+
+
+
+
 
 /* 開発者インタビュー */
 
