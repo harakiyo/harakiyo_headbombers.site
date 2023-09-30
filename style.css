@@ -343,13 +343,15 @@
     color: #333333;
     font-size: 30px;
     font-family: LightNovelPOPv2;
+    width: fit-content;
 }
 
 .sb-blue{
+    display: inline-block;
     position: absolute;
     width: 70%;
     z-index: 2;
-    max-width: 600px;
+    /* width: fit-content; */
 }
 
 .sb-blue.right{
@@ -424,7 +426,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(247, 58, 92, 90);
+    background-color: rgba(247, 58, 62, 90);
     width: 100%;
     height: auto;
     padding: 100px 0;
@@ -499,14 +501,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     padding: 15px 60px 45px 45px;
-}
-
-.steps.step1{
-    background-image: url(img/step1_sb_1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 30px 90px 100px 100px;
-    margin-left: 5%;
 }
 
 .advice.step1{
@@ -859,7 +853,20 @@
 
 .connection img{
     width: 100%;
-} 
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
