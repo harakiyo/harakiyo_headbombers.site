@@ -401,14 +401,10 @@
 }
 
 @media (max-width: 915px) {
-        
-    .intro-detail-1 {
-        width: 80%;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        margin: 0 auto;
+    .hedobon-description{
+        padding: 10% 15% 15% 15%;
     }
+
 
     .intro-detail-1 p{
         font-size: 24px;
@@ -441,26 +437,38 @@
 }
 
 @media (max-width: 768px) {
-        
-    .intro-detail-1 {
+    .hedobon-description{
+        padding: 6%;
         width: 80%;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        margin: 0 auto;
-    }
-
-    .intro-detail-1 p{
-        font-size: 24px;
     }
 
     .sb-white.right{
         top: -15%;
         left: 60%;
     }
-
 }
 
+@media (max-width:450px) {
+    .hedobon-description{
+        padding: 10% 6% 7% 8%;
+    }
+
+    .intro-detail-1{
+        font-size: 20px;
+        padding: 0px;
+        width: 100%;
+    }
+    .horizontal-line{
+        height: 2px;
+        margin-bottom: 15px;
+    }
+
+    .intro-detail-1 p{
+        font-size: 20px;
+        padding: 2px;
+    }
+    
+}
 
 /* 使い方（これで決めるぞ〜〜） */
 .howtouse{
@@ -706,8 +714,6 @@ position: absolute;
     left: 20%;
     z-index: 2;
     text-align: center;
-    /* background:linear-gradient(transparent 60%, #ff6 60%);
-    background-position: center center; */
 }
 
 .point.step2::after{
@@ -724,346 +730,11 @@ position: absolute;
     padding: 0 20px ;
 }
 
-
-
-
-/* 使い方（頑張るぞ〜〜） */
-/* 
-.howtouse{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(247, 58, 62, 90);
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
+@media (max-width: 1024px) {
+    .detail.step1 {
+        margin-top: 7%;
+    }
 }
-
-.intro{
-
-}
-
-.detail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    max-height: 600px;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-}
-
-.detail.step1{
-    background-image: url(img/step1_box.png);
-    position: relative;
-    max-width: 900px;
-}
-
-.detail.step2{
-    background-image: url(img/step2_box.png);
-}
-
-.description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.description.step1{
-    position: relative;
-    top: 0px;
-    left: 185px;
-    max-width: 500px;
-    max-height: 600px;
-}
-
-.howtouse .card{
-    position: absolute;
-    max-width: 450px;
-    width: 100%;
-}
-
-.howtouse .card.step1{
-    width: auto;
-    height: 100%;
-    max-height: 580px;
-    width: 40%;
-    object-fit: contain;
-    top: 39px;
-    left: 9%;
-}
-
-.point.step1{
-    position: absolute;
-    top: 13%;
-}
-
-.steps.step1{
-    position: absolute;
-    top: 41%;
-    left: 18%;
-}
-
-.steps-sb{
-    background-image: url(img/step1_sb_1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 35%;
-    left: 11%;
-    width: 75%;
-}
-
-.howtouse p{
-    font-size: 34px;
-    font-family: Corporate-Logo-Rounded-Bold-ver3;
-    color: #333333;
-}
-
-.advice{
-    display: flex;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 15px 60px 45px 45px;
-}
-
-.detail.step1 .advice img{
-    width: 60%;
-}
-
-.advice.step1{
-     background-image: url(img/step1_sb_2.png); 
-} */
-
-
-
-
-
-
-/* 使い方*/
-/* .howtouse{
-    position: relative;
-    background-color: rgba(247, 58, 62, 90);
-    height: 1932px;
-}
-
-.howtouse h2{
-    position: absolute;
-    top: 8%;
-    left: 10%;
-    transform: translate(-8%, -10%);
-    background-image: url(img/sb_howto.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: #fff;
-    font-size: 60px;
-    padding: 75px 130px 150px 130px;
-    z-index: 3;
-}
-
-.step01{
-    position: absolute;
-    top: 13%;
-    left: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: LightNovelPOPv2;
-}
-.step1-card{
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    width: 30%;
-    height: auto;
-    z-index: 2;
-}
-
-.stroke.step{
-    font-size: 35px;
-    color: #fff;
-}
-
-.stroke.number{
-    font-size: 128px;
-    color: #FFD239;
-    -webkit-text-stroke: 15px #333;
-}
-
-.step1-detail,
-.step2-detail {
-    position: relative;
-    font-family: Corporate-Logo-Rounded-Bold-ver3;
-    font-size: 30px;
-    color: #333333;
-    max-width: 1000px;
-    width: 100%;
-    max-height: 1200px;
-    height: 100%;
-}
-
-.step1-detail img,
-.step2-detail img{
-    position: absolute;
-    z-index: 7;
-}
-
-.step2-detail img{
-    top: 1350px;
-    left: 17%;
-    width: 15%;
-    transform: scaleX(-1);
-}
-
-
-.point {
-    position: absolute;
-    top: 23%;
-    left: 53%;
-    z-index: 4;
-    max-width: 500px;
-}
-
-.larger-text {
-    font-size: 50px;
-}
-
-
-.order{
-    position: absolute;
-    top: 650px;
-    left: 800px;
-    background-image: url(img/step1_sb_1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 53px 45px 110px 80px;
-    z-index: 5;
-}
-
-.announce{
-    position: absolute;
-    top: 830px;
-    left: 800px;
-    line-height: 1.2;
-    background-image: url(img/step1_sb_2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 40px 90px 50px 50px;
-    z-index: 6;
-}
-
-.step02{
-    position: absolute;
-    top:57.5%;
-    left: 21%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: LightNovelPOPv2;
-}
-
-.step1-box{
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    width: 100%;
-    z-index: 1;
-}
-
-.step2-box{
-    position: absolute;
-    top: 80%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    width: 70%;
-    z-index: 1;
-
-}
-
-.step2-card{
-    position: absolute;
-    top: 79.5%;
-    left: 66.5%;
-    transform: translate(-50%, -50%);
-    width: 30%;
-    height: auto;
-    z-index: 2;
-}
-
-.point2 {
-    position: absolute;
-    top: 1320px;
-    left: 33%;
-    background-image: url(img/step2_sb_1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 53px 45px 110px 80px;
-    z-index: 9;
-}
-
-.order2{
-    position: absolute;
-    top: 1520px;
-    left: 20%;
-    line-height: 1.5;
-    background-image: url(img/step2_sb_2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 100px 30px 80px 30px;
-    z-index: 7;
-}
-
-.announce2{
-    position: absolute;
-    top: 1770px;
-    left: 380px;
-    z-index: 8;
-    font-size: 50px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 寝癖診断 */
 
@@ -1295,7 +966,7 @@ position: absolute;
     
 }
 
-.interview-text h1{
+.interview-stroke{
     font-size: 60px;
     font-family: LightNovelPOPv2;
     color: #333333;
@@ -1362,6 +1033,10 @@ position: absolute;
 
 
 @media (max-width: 1024px) {
+    .interview-stroke {
+        font-size: 56px;
+    }
+
     .person.kinomu-,
     .person.himura,
     .person.runmaru {
@@ -1503,6 +1178,16 @@ position: absolute;
 
 }
 
+@media (max-width: 768px){
+    .interview-stroke{
+        font-size: 46px;
+    }
+    .interview-text .horizontal-line {
+        height: 4px;
+    }
+}
+
+
 @media (max-width: 732px) {
     .stroke-title{
         font-size: 30px;
@@ -1513,6 +1198,7 @@ position: absolute;
         height: 6px; 
         background-color: #fff;
     }
+    
 }
 
 
