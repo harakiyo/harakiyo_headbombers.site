@@ -14,7 +14,11 @@
     src: url('/Users/chiho/Desktop/harakiyo_headbombers.site/font/Corporate-Logo-Rounded-Bold-ver3.otf');
 }
   
-
+body {
+    font-family: 'LightNovelPOPv2', sans-serif;
+    font-family: 'Corporate-Logo-Rounded-Bold-ver3', sans-serif;
+  }
+  
 .firstview{
     background-image: url(img/bg_firstview.png);
     background-size: cover;
