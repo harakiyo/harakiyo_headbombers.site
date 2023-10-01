@@ -249,7 +249,7 @@
 
 .introduction p{
     padding: 10px;
-    font-size: 34px;
+    font-size: 3vw;
     font-family: Corporate-Logo-Rounded-Bold-ver3;
     color: #333333;
 }
@@ -332,7 +332,7 @@
     align-items: center; */
     text-align: center;
     color: #333333;
-    font-size: 30px;
+    font-size: 3vws;
     font-family: LightNovelPOPv2;
     width: fit-content;
 }
@@ -340,7 +340,7 @@
 
 
 .big-text{
-    font-size: 50px;
+    font-size: 5vw;
     color: #FFD239;
 }
 
@@ -353,7 +353,7 @@
     background-size: contain;
     background-repeat: no-repeat; 
     background-position: 50% 0;
-    padding: 50px;  
+    padding: 8vw; 
     line-height: 1.2;  
     display: inline-block;
     position: absolute;
@@ -389,6 +389,10 @@
     padding-left: 15%;
 }
 
+.sb-white-text.right{
+    padding: 10vw 0;
+}
+
 @media (max-width: 1024px) {
     .sb-blue-text.right{
         top: -20%;
@@ -414,13 +418,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
         width: 90%;
     }
 
 
     .sb-blue-text.right {
-        top: 5%;
+        top: -46%;
     }
 
     .sb-white.right{
@@ -429,7 +432,7 @@
     }
 
     .sb-blue-text.left{
-        top: -25%;
+        top: -40%;
         left: 14%;
     }
 
