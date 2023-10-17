@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'myfont'; LightNovelPOPv2
-    /* フォーマットごとにパスを指定 */
+
     src: url('/Users/chiho/Desktop/harakiyo_headbombers.site/font/Corporate-Logo-Rounded-Bold-ver3') format('otf');
     src: url('/Users/chiho/Desktop/harakiyo_headbombers.site/font/LightNovelPOPv2') format('otf');
   }
-  /* @font-faceのfont-familyでつけた名前を指定 */
+
   body {
     font-family: 'myfont', sans-serif;
-  }
+  } */
 
 .firstview{
     background-image: url(img/bg_firstview.png);
@@ -88,7 +88,6 @@
     z-index: 3;
     animation: bounce 3.5s .2s;
     z-index: 1;
-
     animation-name: bound-anim;
     animation: 1s bound-anim ease-out infinite alternate; 
 }
@@ -224,14 +223,25 @@
     z-index: 2;
 }
 
+@media (max-width: 768px) {
+    .award-sb{
+        top: 20%;
+        width: 30%;
+    }
+}
 
+@media (max-width: 580px) {
+    .award-sb{
+        
+    }
+}
 
-
-
-
-
-
-
+@media (max-width: 450px){
+    .firstview{
+        background-image: url(img/firstview_sp_bg.png);
+        background-attachment: local;
+    }
+} 
 
 
 
