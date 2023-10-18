@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-/* @font-face {
-    font-family: 'myfont'; LightNovelPOPv2
+@font-face {
+    font-family: 'myfont'; 
 
     src: url('/Users/chiho/Desktop/harakiyo_headbombers.site/font/Corporate-Logo-Rounded-Bold-ver3') format('otf');
     src: url('/Users/chiho/Desktop/harakiyo_headbombers.site/font/LightNovelPOPv2') format('otf');
@@ -13,7 +13,7 @@
 
   body {
     font-family: 'myfont', sans-serif;
-  } */
+  }
 
 .firstview{
     background-image: url(img/bg_firstview.png);
