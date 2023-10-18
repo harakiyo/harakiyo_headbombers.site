@@ -386,14 +386,14 @@
 
 .sb-blue-text.right{
     background-image: url(img/sb_blue_right.png);
-    top: -15%;
+    top: -25%;
     left: 60%;
 }
 
 .sb-blue-text.left{
     background-image: url(img/sb_blue_left.png);
-    top: -20%;
-    left: 20%;
+    top: -37%;
+    left: 8%;
 }
 .sb-white{
     display: flex;
@@ -420,13 +420,6 @@
     /* padding: 10vw 0; */
 }
 
-@media (max-width: 1024px) {
-    .sb-blue-text.left{
-        top: -25%;
-        left: 14%;
-    }
-}
-
 @media (max-width: 915px) {
     .hedobon-description{
         padding: 10% 15% 15% 15%;
@@ -451,16 +444,10 @@
         padding: 7% 11% 3% 12%;
     }
 
-    .sb-blue-text.right{
-        top: -30%; 
-    }
     .intro-detail-3{
         margin-bottom: 0;
     }
 
-    .sb-blue-text.left{
-        top: -35%; 
-    }
 
     .horizontal-line{
         width: 82%;
