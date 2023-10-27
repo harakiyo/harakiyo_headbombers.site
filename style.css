@@ -1053,12 +1053,12 @@ position: absolute;
 }
 
 .interview-heading img{
-    width: 15%;
+    width: 20%;
     height: 15%;
 }
 
 .interview-text{
-    padding: 3% 0px 0px 10%;
+    padding: 3% 0% 3% 10%;
     text-align: center;
     
 }
@@ -1190,7 +1190,7 @@ position: absolute;
 
     .person .comment.boys,
     .person .comment.girls{
-        padding:13% 30% 25% 10%;
+        padding:16% 23% 25% 7%;
     }
 
     .comment.boys,
@@ -1273,6 +1273,12 @@ position: absolute;
         margin-bottom: 40%;
     }
 
+}
+
+@media (max-width: 805px) {
+    .person .comment.boys, .person .comment.girls {
+        padding: 12% 34% 25% 8%;
+    }
 }
 
 @media (max-width: 768px){
