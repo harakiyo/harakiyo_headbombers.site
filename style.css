@@ -485,11 +485,13 @@ src: url('https://cdn.leafscape.be/NovelPOP/novelpop_web.woff2')
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 481px) {
     .hedobon-description{
-        padding: 10% 6% 7% 8%;
+        padding: 6% 6% 7% 8%;
     }
 }
+
+
 @media (max-width:450px) {
     .hedobon-description{
         padding: 10% 13% 7%;
@@ -561,16 +563,18 @@ src: url('https://cdn.leafscape.be/NovelPOP/novelpop_web.woff2')
     position: relative;
 }
 
-.step1-text{
+.step01{
     position: absolute;
-    top: -4%;
-    right: 13%;
+    top: -13%;
+    right: 10%;
+    width: 20%;
 }
 
-.step2-text{
+.step02{
     position: absolute;
-    top: -4%;
-    left: 13%;
+    top: -11.5%;
+    left: 10%;
+    width: 20%;
 }
 
 .stroke.step {
@@ -638,7 +642,7 @@ position: absolute;
 .point.step1{
     position: absolute;
     top: 14%;
-    left: 53%;
+    left: 52%;
     line-height: 2;
     z-index: 2;
     color: #fff;
@@ -650,19 +654,19 @@ position: absolute;
     content: '';
     position: absolute;
     top: 75%;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
     background-color: #FFD239;
     z-index: -1;
     display: block;
     height: 15px;
-    width: 100%;
+    width: 95%;
     padding: 0 20px ;
 }
 
 .larger-text {
-    font-size: 50px;
-    padding: 0 10px;
+    font-size: 2em;
+    padding: 0.2em;
     color: #FFD239;
     font-weight: bold;
 }
@@ -692,7 +696,7 @@ position: absolute;
     background-size: contain;
     color: #fff;
     font-weight: bold;
-    -webkit-text-stroke: 7px #333;
+    -webkit-text-stroke: 0.4em #333;
     margin: 0;
     line-height: 1.3;
 }
@@ -703,7 +707,7 @@ position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
     font-weight: bold;
-    -webkit-text-stroke: 7px #333;
+    -webkit-text-stroke: 0.3em #333;
     margin: 0;
     line-height: 1.5;
     background-repeat: no-repeat;
@@ -715,7 +719,8 @@ position: absolute;
     left: 50%;
     background-image: url(img/step1_sb_1.png);
     color: rgba(60, 225, 255, 90);
-    padding: 55px 29px 125px 58px;
+    /* padding: 55px 29px 125px 58px; */
+    padding: 5% 12% 11% 6%;
 }
 
 .stroke.steps.step2{
@@ -728,16 +733,16 @@ position: absolute;
 
 .hedobon_purple{
     position: absolute;
-    top: 55%;
-    left: 71%;
-    width: 200px;
+    bottom: 18.5%;
+    right: 7.5%;
+    width: 20%;
 }
 
 .hedobon_yellow{
     position: absolute;
     top: 16.5%;
     left: 8%;
-    width: 200px;
+    width: 20%;
     transform: scale(-1, 1);
 }
 
@@ -773,13 +778,13 @@ position: absolute;
     content: '';
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
     background-color: #00B4D8;
     z-index: -1;
     display: block;
     height: 15px;
-    width: 100%;
+    width: 95%;
     padding: 0 20px ;
 }
 
@@ -791,24 +796,57 @@ position: absolute;
     .detail.step1 {
         margin-top: 7%;
     }
-    .step1-text{
-        top: -6%;
-        right: 12%;
-    }
     .howtouse p{
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
+    .stroke.waytouse {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 930px) {
+    .howtouse p{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 883px) {
+    .howtouse p{
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 800px) {
+    .howtouse p{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 730px) {
+    .howtouse p{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 665px) {
     .howtouse p{
         font-size: 15px;
     }
 }
 
-@media (max-width: 825px) {
+@media (max-width: 600px) {
     .howtouse p{
-        font-size: 15px;
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 530px) {
+    .howtouse p{
+        font-size: 11px;
     }
 }
 
