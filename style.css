@@ -351,14 +351,9 @@ src: url('https://cdn.leafscape.be/NovelPOP/novelpop_web.woff2')
 
 .intro-detail-2 h2,
 .intro-detail-3 h2{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     text-align: center;
     color: #333333;
     font-size: 3vw;
-    /* font-family: LightNovelPOPv2; */
     font-family: ラノベPOPフォント;
     width: fit-content;
 }
@@ -581,7 +576,6 @@ src: url('https://cdn.leafscape.be/NovelPOP/novelpop_web.woff2')
     color: #ffffff;
     font-weight: bold;
     font-size: 30px;
-    /* font-family: LightNovelPOPv2; */
     font-family: ラノベPOPフォント;
     -webkit-text-stroke: 12px #333;
     position: relative;
@@ -594,7 +588,6 @@ src: url('https://cdn.leafscape.be/NovelPOP/novelpop_web.woff2')
     color: #ffd74b;
     font-weight: bold;
     font-size: 120px;
-    /* font-family: LightNovelPOPv2; */
     font-family: ラノベPOPフォント;
     -webkit-text-stroke: 15px #333;
     position: relative;
@@ -614,7 +607,6 @@ position: absolute;
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
-    /* font-family: LightNovelPOPv2; */
     font-family: ラノベPOPフォント;
     color: #fff;
     font-weight: bold;
@@ -900,7 +892,7 @@ position: absolute;
     color: #ffd74b;
     font-weight: bold;
     font-size: 70px;
-    font-family: LightNovelPOPv2;
+    font-family: ラノベPOPフォント;
     -webkit-text-stroke: 10px #333;
     position: relative;
     margin: 0;
@@ -1101,7 +1093,7 @@ position: absolute;
     color: #ffd74b;
     font-weight: bold;
     font-size: 70px;
-    font-family: LightNovelPOPv2;
+    font-family: ラノベPOPフォント;
 
     -webkit-text-stroke: 10px #fff;
     position: relative;
@@ -1127,7 +1119,7 @@ position: absolute;
 
 .interview-stroke{
     font-size: 60px;
-    font-family: LightNovelPOPv2;
+    font-family: ラノベPOPフォント;
     color: #333333;
 }
 
@@ -1286,7 +1278,7 @@ position: absolute;
         text-align: center;
         width: 100%;
         font-size: 40px;
-        font-family: LightNovelPOPv2;
+        font-family: ラノベPOPフォント;
         color: #333333;
     }
     
