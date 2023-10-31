@@ -273,6 +273,7 @@ src: url('https://cdn.leafscape.be/NovelPOP/novelpop_web.woff2')
     padding: 10px;
     font-size: 3vw;
     font-family: Corporate-Logo-Rounded-Bold-ver3;
+    font-weight: bold;
     color: #333333;
 }
 
@@ -537,6 +538,7 @@ src: url('https://cdn.leafscape.be/NovelPOP/novelpop_web.woff2')
 
 .howtouse p{
     font-family: Corporate-Logo-Rounded-Bold-ver3;
+    font-weight: bold;
     font-size: 30px;
 }
 
@@ -1167,6 +1169,7 @@ position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
     font-family: Corporate-Logo-Rounded-Bold-ver3;
+    font-weight: bold;
     color: #333333;
 }
 
@@ -1472,5 +1475,6 @@ footer{
 footer p{
     color: #ffffff;
     font-family: Corporate-Logo-Rounded-Bold-ver3;
+    font-weight: bold;
     font-size: 15px;
 }
