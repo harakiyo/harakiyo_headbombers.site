@@ -10,6 +10,12 @@ font-family: ラノベPOPフォント;
 src: url('https://cdn.leafscape.be/NovelPOP/novelpop_web.woff2')
      format("woff2");
 }
+@font-face {
+    font-family: "Corporate-Logo-Rounded-Bold-ver3";
+    src: url("font/Corporate-Logo-Rounded-Bold-ver3.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+  }
 
 .firstview{
     background-image: url(img/bg_firstview.png);
@@ -550,7 +556,9 @@ src: url('https://cdn.leafscape.be/NovelPOP/novelpop_web.woff2')
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 85%;
+    /* width: 85%; */
+    width: 100%;
+    padding: 5%;
     margin-bottom: 10%;
 }
 
