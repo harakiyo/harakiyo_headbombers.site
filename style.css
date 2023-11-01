@@ -4,22 +4,24 @@
     box-sizing: border-box;
 }
  
-body{
-	font-family: Corporate-Logo-Rounded-Bold-ver3 ;
+@font-face{
+    font-family: ラノベPOPフォント;
+    src: url('https://cdn.leafscape.be/NovelPOP/novelpop_web.woff2');
 }
 
-@font-face
-{
-font-family: ラノベPOPフォント;
-src: url('https://cdn.leafscape.be/NovelPOP/novelpop_web.woff2')
-     format("woff2");
-}
 @font-face {
     font-family: "Corporate-Logo-Rounded-Bold-ver3";
-    src: url("font/Corporate-Logo-Rounded-Bold-ver3.otf") format("otf");
+    src: url("font/Corporate-Logo-Rounded-Bold-ver3.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: "sample-font";
+    src: url("./font/MochiyPopPOne-Regular.ttf");
     font-weight: normal;
     font-style: normal;
-  }
+} */
 
 .firstview{
     background-image: url(img/bg_firstview.png);
