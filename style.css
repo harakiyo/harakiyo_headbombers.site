@@ -972,6 +972,7 @@ position: absolute;
 @media (max-width: 550px){
     .neguse-stroke{
         font-size: 28px;
+        -webkit-text-stroke: 5px #333;
     }
     .diagnosis-title{
         padding: 30px;
@@ -1429,6 +1430,7 @@ position: absolute;
 @media (max-width: 550px) {
     .interview-stroke{
         font-size: 28px;
+        -webkit-text-stroke: 5px #fff;
     }
 }
 
