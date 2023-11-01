@@ -879,6 +879,9 @@ position: absolute;
     .stroke.easystep{
         font-size: 16px;
     }
+    .point.step1::after {
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 445px) {
@@ -968,7 +971,7 @@ position: absolute;
 
 @media (max-width: 550px){
     .neguse-stroke{
-        font-size: 32px;
+        font-size: 28px;
     }
     .diagnosis-title{
         padding: 30px;
@@ -1081,7 +1084,7 @@ position: absolute;
 
 @media (max-width: 450px){
     .skill-heading{
-        width: 150px;
+        width: 120px;
     }
 }
 
@@ -1425,7 +1428,7 @@ position: absolute;
 
 @media (max-width: 550px) {
     .interview-stroke{
-        font-size: 32px;
+        font-size: 28px;
     }
 }
 
